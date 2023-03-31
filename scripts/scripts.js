@@ -95,6 +95,7 @@ export function addFavIcon(href) {
  * @param {Element} doc The container element
  */
 async function loadLazy(doc) {
+
   const main = doc.querySelector('main');
   await loadBlocks(main);
 

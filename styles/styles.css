@@ -10,17 +10,29 @@
  * governing permissions and limitations under the License.
  */
 
+@font-face {
+  font-family: 'SpeedeeReg';
+  src: url('styles/fonts/Speedee_W_Rg.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'SpeedeeBold';
+  src: url('styles/fonts/Speedee_W_Bd.woff') format('woff');
+}
+
+
  :root {
   /* colors */
+   background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
   --link-color: #035fe6;
   --link-hover-color: #136ff6;
-  --background-color: #fff;
+  --background-color: #000;
   --overlay-background-color: #eee;
   --highlight-background-color: #ccc;
-  --text-color: #000;
+  --text-color: #fff;
 
   /* fonts */
-  --body-font-family: 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
+  --body-font-family: 'SpeedeeReg', helvetica, ubuntu, roboto, noto, sans-serif;
   --heading-font-family: var(--body-font-family);
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
