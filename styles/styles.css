@@ -12,12 +12,12 @@
 
 @font-face {
   font-family: 'SpeedeeReg';
-  src: url('styles/fonts/Speedee_W_Rg.woff') format('woff');
+  src: url('/fonts/Speedee_W_Rg.woff') format('woff');
 }
 
 @font-face {
   font-family: 'SpeedeeBold';
-  src: url('styles/fonts/Speedee_W_Bd.woff') format('woff');
+  src: url('/fonts/Speedee_W_Bd.woff') format('woff');
 }
 
 
