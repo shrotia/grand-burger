@@ -29,8 +29,12 @@
   align-items: center;
 }
 
-.burger-cards > ul > li .burger-cards-left-section .burger-cards-card-body p:nth-of-type(2) {
+.burger-cards > ul > li .burger-cards-left-section .burger-cards-card-body p:first-child {
   color:red;
+}
+
+.burger-cards-left-section {
+  margin-top: 3rem;
 }
 
 .burger-cards-right-section .burger-cards-card-body {
