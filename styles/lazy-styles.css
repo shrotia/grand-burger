@@ -155,3 +155,9 @@ div.section.breakfast-footer-logo {
 .burgerhero.breakfast-hero.block {
     opacity: 1;
 }
+
+@media (min-height: 900px) {
+    main {
+        overflow-y: hidden;
+    }
+}
