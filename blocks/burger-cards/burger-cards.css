@@ -1,16 +1,13 @@
 .burger-cards > ul {
-  list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 16px;
+  grid-template-columns: auto auto auto auto;
 }
 
 .burger-cards > ul > li {
   display: grid;
   grid-template-columns: auto 1fr;
-  column-gap: 1rem;
   align-items: center;
   padding: 0.5rem;
 }
@@ -18,7 +15,7 @@
 .burger-cards-right-section {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 0.5rem;
   line-height: 0;
 }
 
@@ -54,7 +51,7 @@
 }
 
 .burger-cards > ul > li img {
-  width: 50%;
+  width: 5rem;
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
