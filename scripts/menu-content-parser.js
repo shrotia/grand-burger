@@ -13,8 +13,8 @@ import { offerPlaceholders } from "../blocks/burgerfooter/burgerfooter.js";
 function processPriceSection(menuJsonPayload) {
   for (const {
     Item,
-    "Variant 1": variant1Price,
-    "Variant 2": variant2Price,
+    "Variant 1 [Price | Calories]": variant1Price,
+    "Variant 2 [Price | Calories]": variant2Price,
   } of menuJsonPayload.breakfastPrices.data) {
     const variant1PriceElement = placeholders.get(Item + ":variant1-price");
     const variant2PriceElement = placeholders.get(Item + ":variant2-price");

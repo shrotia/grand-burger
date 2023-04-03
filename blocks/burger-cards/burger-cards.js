@@ -52,6 +52,17 @@ export default function decorate(block) {
     rightSection.className = "burger-cards-right-section";
     li.append(rightSection);
 
+    // add blank p element when no of children < 4
+    /* if (rightSecondElement.children.length === 3) {
+       const blankPElement = document.createElement("p");
+       blankPElement.textContent = "`";
+       blankPElement.style.opacity = "0";
+       rightSecondElement.insertBefore(
+         blankPElement,
+         rightSecondElement.children[1]
+       );
+     }*/
+
     leftSection.append(leftFirstElement);
     rightSection.append(rightFirstElement);
     rightSection.append(rightSecondElement);
