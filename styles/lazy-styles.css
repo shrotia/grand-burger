@@ -8,7 +8,8 @@
 /* LEFT LUNCH */
 
 html {
-    background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 27%, rgba(250,235,215,0.7567620798319328) 89%);
 }
 
 /* reset header height */

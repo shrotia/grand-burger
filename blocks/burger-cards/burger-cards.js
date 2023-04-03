@@ -1,5 +1,29 @@
 import { createOptimizedPicture } from "../../scripts/lib-franklin.js";
 
+// Map to hold Elements having templates placeholders
+export const placeholders = new Map();
+
+function appendPlaceholderVariablesForMeals(
+  mealPricesParentElement,
+  mealOptionNumber
+) {
+  if (mealPricesParentElement.children.length < 3) {
+    const firstVariantPrice = document.createElement("p");
+    firstVariantPrice.className = "variant1-price";
+    firstVariantPrice.style.display = "none";
+    mealPricesParentElement.append(firstVariantPrice);
+    placeholders.set(mealOptionNumber + ":variant1-price", firstVariantPrice);
+  }
+
+  if (mealPricesParentElement.children.length < 4) {
+    const secondVariantPrice = document.createElement("p");
+    secondVariantPrice.className = "variant2-price";
+    secondVariantPrice.style.display = "none";
+    mealPricesParentElement.append(secondVariantPrice);
+    placeholders.set(mealOptionNumber + ":variant2-price", secondVariantPrice);
+  }
+}
+
 export default function decorate(block) {
   /* change to ul, li */
   const ul = document.createElement("ul");
@@ -17,6 +41,9 @@ export default function decorate(block) {
     const leftFirstElement = li.children[0];
     const rightFirstElement = li.children[1];
     const rightSecondElement = li.children[2];
+
+    appendPlaceholderVariablesForMeals(rightSecondElement, ul.children.length);
+
     const leftSection = document.createElement("div");
     leftSection.className = "burger-cards-left-section";
     li.append(leftSection);

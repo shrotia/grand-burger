@@ -13,6 +13,8 @@ import {
   loadCSS,
 } from "./lib-franklin.js";
 
+import { populateValuesContent } from "./menu-content-parser.js";
+
 const LCP_BLOCKS = []; // add your LCP blocks to the list
 window.hlx.RUM_GENERATION = "project-1"; // add your RUM generation information here
 
@@ -111,6 +113,9 @@ async function loadLazy(doc) {
 
   loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`);
   addFavIcon(`${window.hlx.codeBasePath}/styles/favicon.svg`);
+
+  await populateValuesContent(doc);
+
   sampleRUM("lazy");
   sampleRUM.observe(main.querySelectorAll("div[data-block-name]"));
   sampleRUM.observe(main.querySelectorAll("picture > img"));
