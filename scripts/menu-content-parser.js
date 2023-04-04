@@ -15,7 +15,16 @@ function processPriceSection(menuJsonPayload) {
     Item,
     "Variant 1 [Price | Calories]": variant1Price,
     "Variant 2 [Price | Calories]": variant2Price,
+    "Out Of Stock": oufOfStock,
   } of menuJsonPayload.breakfastPrices.data) {
+    if (
+      oufOfStock.trim().toLowerCase() === "true" ||
+      oufOfStock.trim().toLowerCase() === "yes"
+    ) {
+      const mealOptionElement = placeholders.get(Item + ":main");
+      mealOptionElement.classList.add("out-of-stock");
+    }
+
     const variant1PriceElement = placeholders.get(Item + ":variant1-price");
     const variant2PriceElement = placeholders.get(Item + ":variant2-price");
 

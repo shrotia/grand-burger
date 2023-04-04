@@ -7,6 +7,8 @@ function appendPlaceholderVariablesForMeals(
   mealPricesParentElement,
   mealOptionNumber
 ) {
+  placeholders.set(mealOptionNumber + ":main", mealPricesParentElement);
+
   if (mealPricesParentElement.children.length < 3) {
     const firstVariantPrice = document.createElement("p");
     firstVariantPrice.className = "variant1-price";
