@@ -62,10 +62,9 @@
     object-fit: cover;
 }
 
-
 /* Out of Stock */
 .burger-cards-right-section .burger-cards-card-body.out-of-stock {
-  color: red;
+    text-decoration: line-through;
 }
 
 .burger-cards-right-section .burger-cards-card-body.out-of-stock::after {
