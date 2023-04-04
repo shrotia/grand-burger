@@ -44,27 +44,23 @@
       "timestamp": 1671099599113
     },
     {
-      "path": "/blocks/burger-cards.css",
+      "path": "/blocks/burger-cards/burger-cards.css",
       "timestamp": 1671099599112
     },
     {
-      "path": "/blocks/burger-cards.js",
+      "path": "/blocks/burger-cards/burger-cards.js",
       "timestamp": 1671099599112
     },
     {
-      "path": "/blocks/burgerfooter.css",
+      "path": "/blocks/burgerfooter/burgerfooter.css",
       "timestamp": 1671099599112
     },
     {
-      "path": "/blocks/burgerfooter.js",
+      "path": "/blocks/burgerfooter/burgerfooter.js",
       "timestamp": 1671099599112
     },
     {
-      "path": "/blocks/burgerfooter.css",
-      "timestamp": 1671099599112
-    },
-    {
-      "path": "/blocks/burgerhero.css",
+      "path": "/blocks/burgerhero/burgerhero.css",
       "timestamp": 1671099599112
     }
   ]
