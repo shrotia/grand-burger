@@ -3,7 +3,7 @@ indices:
   channels:
     include:
       - '/screens/**'
-    target: '/screens/channels'
+    target: '/screens/internal/channels'
     properties:
       title:
         select: head > meta[property="og:title"]
@@ -34,8 +34,8 @@ indices:
           attribute(el, 'href')
   channel-manifest:
     include:
-      - '/screens/caesars/restaurants/menus/**'
-    target: '/screens/caesars/restaurants/menus/manifests'
+      - '/screens/**'
+    target: '/screens/internal/manifests'
     properties:
       title:
         select: head > meta[property="og:title"]
