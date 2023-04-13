@@ -1,0 +1,79 @@
+{
+  "version": "3.0",
+  "contentDelivery": {
+    "providers": [
+      {
+        "name": "franklin",
+        "endpoint": "/"
+      }
+    ],
+    "defaultProvider": "franklin"
+  },
+  "timestamp": 1681379784702,
+  "entries": [
+    {
+      "path": "/screens/lunch-left",
+      "timestamp": 1680263403000
+    },
+    {
+      "path": "/scripts/lib-franklin.js",
+      "timestamp": 1680250688000
+    },
+    {
+      "path": "/scripts/scripts.js",
+      "timestamp": 1680261321000
+    },
+    {
+      "path": "/styles/styles.css",
+      "timestamp": 1680263253000
+    },
+    {
+      "path": "/media_134bc1b9a1bb9488cb3112546f5b20f2327d7187f.png?width=750&format=png&optimize=medium",
+      "hash": "134bc1b9a1bb9488cb3112546f5b20f2327d7187f"
+    },
+    {
+      "path": "/media_1641f9df1680062a933596745db5c136f0f6f10a5.png?width=750&format=png&optimize=medium",
+      "hash": "1641f9df1680062a933596745db5c136f0f6f10a5"
+    },
+    {
+      "path": "/media_1494a39d6bef1888b573e54ea098628cb4924afe9.png?width=750&format=png&optimize=medium",
+      "hash": "1494a39d6bef1888b573e54ea098628cb4924afe9"
+    },
+    {
+      "path": "/media_1bce15ab74589f9eb1b2cb5ad20889e32d225764c.png?width=750&format=png&optimize=medium",
+      "hash": "1bce15ab74589f9eb1b2cb5ad20889e32d225764c"
+    },
+    {
+      "path": "/media_10fdfc815981bc6b7637f9999a0ebb0675211a48d.png?width=750&format=png&optimize=medium",
+      "hash": "10fdfc815981bc6b7637f9999a0ebb0675211a48d"
+    },
+    {
+      "path": "/media_10476a43588343646bef6f69584feb86b8cc4cc14.png?width=750&format=png&optimize=medium",
+      "hash": "10476a43588343646bef6f69584feb86b8cc4cc14"
+    },
+    {
+      "path": "/media_11ca8e1ab9ea4e9fe04065b0809399d24e520a90d.png?width=750&format=png&optimize=medium",
+      "hash": "11ca8e1ab9ea4e9fe04065b0809399d24e520a90d"
+    },
+    {
+      "path": "/media_11b8433d61a8c5d29b750beb5fd8d95128cb0a782.png?width=750&format=png&optimize=medium",
+      "hash": "11b8433d61a8c5d29b750beb5fd8d95128cb0a782"
+    },
+    {
+      "path": "/media_174bfa9bfbcffd1e8c0a08aa7f1b41b2f20a9c946.jpeg?width=750&format=jpeg&optimize=medium",
+      "hash": "174bfa9bfbcffd1e8c0a08aa7f1b41b2f20a9c946"
+    },
+    {
+      "path": "/scripts/delayed.js",
+      "timestamp": 1680250688000
+    },
+    {
+      "path": "/blocks/columns/columns.css",
+      "timestamp": 1680250687000
+    },
+    {
+      "path": "/blocks/columns/columns.js",
+      "timestamp": 1680250687000
+    }
+  ]
+}

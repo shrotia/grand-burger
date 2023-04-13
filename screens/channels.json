@@ -1,0 +1,21 @@
+{
+  "channels": [
+    {
+      "manifestPath": "/screens/breakfast-left.manifest.json",
+      "lastModified": "2023-04-09T14:10:08.000Z",
+      "externalId": "/screens/breakfast-left",
+      "title": "Grand Burger Breakfast",
+      "liveUrl": "https://main--grand-burger--shrotia.hlx.live/screens/breakfast-left"
+    },
+    {
+      "manifestPath": "/screens/lunch-left.manifest.json",
+      "lastModified": "2023-03-31T11:50:03.000Z",
+      "externalId": "/screens/lunch-left",
+      "title": "Grand Burger Lunch",
+      "liveUrl": "https://main--grand-burger--shrotia.hlx.live/screens/lunch-left"
+    }
+  ],
+  "metadata": {
+    "providerType": "franklin"
+  }
+}
