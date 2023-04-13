@@ -16,10 +16,10 @@ indices:
         select: none
         value: |
           parseTimestamp(headers['last-modified'], 'ddd, DD MMM YYYY hh:mm:ss GMT')
-      lastPublished:
+      lastUpdated:
         select: none
         value: |
-          headers['last-modified']
+          parseTimestamp(headers['last-modified'], 'ddd, DD MMM YYYY hh:mm:ss GMT')
       manifestPath:
         select: head > meta[name="manifestpath"]
         value:  |
@@ -28,7 +28,40 @@ indices:
         select: head > link[rel="canonical"]
         value:  |
           attribute(el, 'href')
-      editUrl:
-        select: head > meta[name="editurl"]
+      publishUrl:
+        select: head > link[rel="canonical"]
+        value: |
+          attribute(el, 'href')
+  channel-manifest:
+    include:
+      - '/screens/caesars/restaurants/menus/**'
+    target: '/screens/caesars/restaurants/menus/manifests'
+    properties:
+      title:
+        select: head > meta[property="og:title"]
         value: |
           attribute(el, 'content')
+      lastModified:
+        select: none
+        value: |
+          parseTimestamp(headers['last-modified'], 'ddd, DD MMM YYYY hh:mm:ss GMT')
+      lastUpdated:
+        select: none
+        value: |
+          parseTimestamp(headers['last-modified'], 'ddd, DD MMM YYYY hh:mm:ss GMT')
+      scripts:
+        select: head > script[src]
+        values: |
+          attribute(el, 'src')
+      styles:
+        select: head > link[rel="stylesheet"]
+        values: |
+          attribute(el, 'href')
+      assets:
+        select: head > link[rel*="preload"]
+        values: |
+          attribute(el, 'href')
+      inlineImages:
+        select: body img
+        values: |
+          attribute(el, 'src')
