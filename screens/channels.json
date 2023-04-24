@@ -13,13 +13,6 @@
       "externalId": "/screens/lunch-left",
       "title": "Grand Burger Lunch",
       "liveUrl": "https://main--grand-burger--shrotia.hlx.live/screens/lunch-left"
-    },
-    {
-      "manifestPath":"/screens-demo/wknd-ordering-kiosk",
-      "lastModified": "2023-04-24T11:50:03.000Z",
-      "externalId": "/screens-demo/wknd-ordering-kiosk",
-      "title": "WKND Ordering Kiosk",
-      "liveUrl": "https://main--wknd--ravverma.hlx.live/screens-demo/wknd-ordering-kiosk"
     }
   ],
   "metadata": {
